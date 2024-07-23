@@ -1,4 +1,7 @@
-import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prettier/prettier */
+import { Injectable } from "@nestjs/common";
 import { createClient, SupabaseClient } from '@supabase/supabase-js'
 import { CreateUserDto } from "./dto/create-user.dto";
 import { LoginUserDto } from "./dto/login-user.dto";

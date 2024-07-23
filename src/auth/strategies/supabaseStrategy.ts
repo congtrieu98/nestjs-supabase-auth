@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt } from 'passport-jwt';
@@ -19,14 +22,14 @@ export class SupabaseStrategy extends PassportStrategy(
   }
 
   async validate(payload: any): Promise<any> {
-    console.log("in validate")
-    let res = super.validate(payload);
-    return res
+    console.log('in validate');
+    const res = super.validate(payload);
+    return res;
   }
 
-  authenticate(req) { 
-    console.log("in authenticate")
-    let res = super.authenticate(req);
-    return res
+  authenticate(req) {
+    console.log('in authenticate');
+    const res = super.authenticate(req);
+    return res;
   }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ValidationError } from "@nestjs/common";
 import { ValidatorOptions } from "@nestjs/common/interfaces/external/validator-options.interface";
 

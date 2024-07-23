@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
 import { Headers } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
@@ -16,7 +17,7 @@ export class AuthController {
     @UseGuards(SupabaseAuthGuard)
     @ApiBearerAuth('access-token')
     async test(@Headers() headers){
-        let x = 1
+        const x = 1
         return true
     }
 
